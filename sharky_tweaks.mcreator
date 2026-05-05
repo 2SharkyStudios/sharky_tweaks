@@ -1,0 +1,150 @@
+{
+  "mod_elements": [
+    {
+      "name": "Sharky",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sharky",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "AdminAxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "admin_axe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/sharky_tweaks/models/item/admin_axe.json",
+          "src/main/java/com/chillcog/sharkytweaks/item/AdminAxeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "SharkSpawning",
+      "type": "gamerule",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shark_spawning",
+      "metadata": {
+        "type": "logic",
+        "files": []
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "UnderwaterMine",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "underwater_mine",
+      "metadata": {
+        "files": [
+          "src/main/java/com/chillcog/sharkytweaks/block/UnderwaterMineBlock.java",
+          "src/main/resources/assets/sharky_tweaks/models/block/underwater_mine.json",
+          "src/main/resources/assets/sharky_tweaks/blockstates/underwater_mine.json",
+          "src/main/resources/assets/sharky_tweaks/models/item/underwater_mine.json",
+          "src/main/resources/data/sharky_tweaks/loot_table/blocks/underwater_mine.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "UnderwaterMineEntityWalksOnTheBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "underwater_mine_entity_walks_on_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/chillcog/sharkytweaks/procedures/UnderwaterMineEntityWalksOnTheBlockProcedure.java"
+        ]
+      },
+      "path": "~/Procedures"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "ITEMS:minecraft:axes": [
+      "~CUSTOM:AdminAxe"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:UnderwaterMine"
+    ],
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:UnderwaterMine"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item_group.sharky_tweaks.sharky": "Sharky",
+      "item.sharky_tweaks.admin_axe": "Admin Axe",
+      "gamerule.sharkSpawning": "Shark Spawning",
+      "gamerule.sharkSpawning.description": "Will sharks spawn in any ocean bione",
+      "block.sharky_tweaks.underwater_mine": "Underwater Mine"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/com/chillcog/sharkytweaks/init/SharkyTweaksModGameRules.java",
+      "src/main/java/com/chillcog/sharkytweaks/init/SharkyTweaksModBlocks.java",
+      "src/main/java/com/chillcog/sharkytweaks/init/SharkyTweaksModItems.java",
+      "src/main/java/com/chillcog/sharkytweaks/SharkyTweaksMod.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/com/chillcog/sharkytweaks/init/SharkyTweaksModTabs.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Procedures",
+        "children": []
+      },
+      {
+        "name": "Blocks",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "sharky_tweaks",
+    "modName": "Sharky Tweaks",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.1",
+    "modElementsPackage": "com.chillcog.sharkytweaks"
+  },
+  "mcreatorVersion": 202600114619
+}

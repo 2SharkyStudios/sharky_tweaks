@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft:block/dropper_front_vertical",
+    "up": "minecraft:block/dispenser_front_vertical",
+    "north": "minecraft:block/dispenser_front_vertical",
+    "east": "minecraft:block/dispenser_front_vertical",
+    "south": "minecraft:block/dispenser_front_vertical",
+    "west": "minecraft:block/dispenser_front_vertical",
+    "particle": "minecraft:block/dropper_front_vertical"
+  },
+  "render_type": "solid"
+}

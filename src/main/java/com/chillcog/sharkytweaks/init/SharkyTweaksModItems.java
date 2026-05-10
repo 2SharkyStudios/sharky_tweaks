@@ -12,6 +12,7 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import com.chillcog.sharkytweaks.item.AdminPickaxeItem;
 import com.chillcog.sharkytweaks.item.AdminAxeItem;
 import com.chillcog.sharkytweaks.SharkyTweaksMod;
 
@@ -19,9 +20,13 @@ public class SharkyTweaksModItems {
 	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(SharkyTweaksMod.MODID);
 	public static final DeferredItem<Item> ADMIN_AXE;
 	public static final DeferredItem<Item> UNDERWATER_MINE;
+	public static final DeferredItem<Item> ADMIN_PICKAXE;
+	public static final DeferredItem<Item> ADMIN_SHOVEL;
 	static {
 		ADMIN_AXE = REGISTRY.register("admin_axe", AdminAxeItem::new);
 		UNDERWATER_MINE = block(SharkyTweaksModBlocks.UNDERWATER_MINE, new Item.Properties().rarity(Rarity.RARE));
+		ADMIN_PICKAXE = REGISTRY.register("admin_pickaxe", AdminPickaxeItem::new);
+		ADMIN_SHOVEL = REGISTRY.register("admin_shovel", AdminShovelItem::new);
 	}
 
 	// Start of user code block custom items

@@ -25,6 +25,8 @@ public class SharkyTweaksModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.sharky_tweaks.sharky")).icon(() -> new ItemStack(Items.PUFFERFISH)).displayItems((parameters, tabData) -> {
 				tabData.accept(SharkyTweaksModItems.ADMIN_AXE.get());
 				tabData.accept(SharkyTweaksModBlocks.UNDERWATER_MINE.get().asItem());
+				tabData.accept(SharkyTweaksModItems.ADMIN_PICKAXE.get());
+				tabData.accept(SharkyTweaksModItems.ADMIN_SHOVEL.get());
 			}).build());
 
 	@SubscribeEvent
@@ -33,6 +35,9 @@ public class SharkyTweaksModTabs {
 			if (tabData.hasPermissions()) {
 				tabData.accept(SharkyTweaksModItems.ADMIN_AXE.get());
 			}
+		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+			tabData.accept(SharkyTweaksModItems.ADMIN_PICKAXE.get());
+			tabData.accept(SharkyTweaksModItems.ADMIN_SHOVEL.get());
 		}
 	}
 }

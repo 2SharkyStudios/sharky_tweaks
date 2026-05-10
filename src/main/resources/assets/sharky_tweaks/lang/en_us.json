@@ -3,5 +3,6 @@
   "item.sharky_tweaks.admin_axe": "Admin Axe",
   "gamerule.sharkSpawning": "Shark Spawning",
   "gamerule.sharkSpawning.description": "Will sharks spawn in any ocean bione",
-  "block.sharky_tweaks.underwater_mine": "Underwater Mine"
+  "block.sharky_tweaks.underwater_mine": "Underwater Mine",
+  "item.sharky_tweaks.admin_pickaxe": "Admin Pickaxe"
 }
